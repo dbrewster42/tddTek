@@ -26,8 +26,12 @@ public class Order {
         }
         return price;
     }
+    public double getTotalTax(){
+        double totalTax = getTotal();
+        return totalTax;
+    }
 
-    public double getTotal() {
+    private double getTotal() {
         double totalTax = 0;
         for (Item item : items) {
             double salesTax = 0.0;
@@ -50,7 +54,7 @@ public class Order {
 
     }
 
-    public double print() {
+    public double TotalAndPrint() {
         double totalTax = getTotal();
         double totalPrice = 0;
         for (Item item : items) {
