@@ -18,13 +18,13 @@ public class TaxTest {
         assertEquals(result, 0.5, .01);
     }
     @Test
-    public void validateSalesTaxRoundsToNearest5(){
+    public void validateSalesTaxRoundsUpToNearest5(){
         double result = Tax.addSalesTax(13.33);
         assertEquals(result, 1.35, .01);
     }
 
     @Test
-    public void validateImportTaxRoundstoNearest5(){
+    public void validateImportTaxRoundsUPtoNearest5(){
         double result = Tax.addImportTax(13.66);
         assertEquals(result, .70, .01);
     }

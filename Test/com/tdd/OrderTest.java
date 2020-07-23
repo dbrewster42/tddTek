@@ -55,7 +55,7 @@ public class OrderTest {
         order.addItem("packet of headache pills", true, 9.75);
         order.addItem("imported box of chocolates", true, 11.25);
         double tax = order.getTotalTax();
-        assertEquals(tax, 6.65, .01);
+        assertEquals(tax, 6.70, .01);
     }
     @Test
     public void validateOrderTotal(){
@@ -79,7 +79,7 @@ public class OrderTest {
         order.addItem("packet of headache pills", true, 9.75);
         order.addItem("imported box of chocolates", true, 11.25);
         double total = order.TotalAndPrint();
-        assertEquals(total, 74.63, .01);
+        assertEquals(total, 74.68, .01);
     }
 
 
